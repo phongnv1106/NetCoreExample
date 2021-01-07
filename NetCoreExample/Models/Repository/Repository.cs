@@ -24,7 +24,7 @@ namespace NetCoreExample.Models.Repository
             {
                 // code theo kieu dong bo thi OK
                 await _context.AddAsync(entity);
-                await _context.SaveChangesAsync();
+                 _context.SaveChanges();
 
                 return entity;
             }
