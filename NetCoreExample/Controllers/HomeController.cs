@@ -26,8 +26,13 @@ namespace NetCoreExample.Controllers
             _logger = logger;
             _productRepository = productRepository;
         }
-
-        public IActionResult Index()
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult TentityDemo()
         {
             Product p = new Product();
             p.ProductName = "dsds";

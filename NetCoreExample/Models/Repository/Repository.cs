@@ -23,7 +23,7 @@ namespace NetCoreExample.Models.Repository
             try
             {
 
-                await _context.AddAsync(entity);
+                 _context.Add(entity);
                  _context.SaveChanges();
 
                 return entity;
