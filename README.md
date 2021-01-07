@@ -1,3 +1,3 @@
 # NetCoreExample
-NetCoreExample
-#Demo TEntity
+# NetCoreExample
+# Demo TEntity
