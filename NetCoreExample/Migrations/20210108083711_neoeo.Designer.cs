@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetCoreExample.Models.EF;
 
 namespace NetCoreExample.Migrations
 {
     [DbContext(typeof(MywebDbContext))]
-    partial class MywebDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210108083711_neoeo")]
+    partial class neoeo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
