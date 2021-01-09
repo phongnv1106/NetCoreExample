@@ -7,14 +7,18 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using IdentityMVC.Example.Data;
 using IdentityMVC.Example.Data.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace IdentityMVC.Example.Areas.Admin.Pages.ContactPage
 {
     public class CreateModel : PageModel
     {
-        private readonly IdentityMVC.Example.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CreateModel(IdentityMVC.Example.Data.ApplicationDbContext context)
+        public CreateModel(ApplicationDbContext context,
+             IAuthorizationService authorizationService,
+            UserManager<IdentityUser> userManager)
         {
             _context = context;
         }

@@ -1,4 +1,5 @@
-﻿using IdentityMVC.Example.Data;
+﻿using IdentityMVC.Example.Authorization;
+using IdentityMVC.Example.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -61,7 +62,16 @@ namespace IdentityMVC.Example
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
 
-            //
+
+            // Authorization handlers.
+            services.AddScoped<IAuthorizationHandler,
+                          ContactIsOwnerAuthorizationHandler>();
+
+            services.AddSingleton<IAuthorizationHandler,
+                                  ContactAdministratorsAuthorizationHandler>();
+
+            services.AddSingleton<IAuthorizationHandler,
+                                  ContactManagerAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

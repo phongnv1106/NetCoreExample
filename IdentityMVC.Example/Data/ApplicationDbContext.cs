@@ -15,5 +15,7 @@ namespace IdentityMVC.Example.Data
         }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Product> Products { get; set; }
+
+      
     }
 }
