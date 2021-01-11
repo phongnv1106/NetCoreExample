@@ -1,0 +1,1 @@
+project net core empty khi khởi tạo
