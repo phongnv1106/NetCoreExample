@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer_WebApi", "Id
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4_WebClient", "IdentityServer4_WebClient\IdentityServer4_WebClient.csproj", "{DB260560-15EB-4008-A8DD-2D639CC4A17F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhap", "Nhap\Nhap.csproj", "{CBE459C9-00D4-43A3-BA9B-4465F60AA49E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nhap", "Nhap\Nhap.csproj", "{CBE459C9-00D4-43A3-BA9B-4465F60AA49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{01AA587A-1EA6-4E7A-9D44-A31B52737D6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CBE459C9-00D4-43A3-BA9B-4465F60AA49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBE459C9-00D4-43A3-BA9B-4465F60AA49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBE459C9-00D4-43A3-BA9B-4465F60AA49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AA587A-1EA6-4E7A-9D44-A31B52737D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AA587A-1EA6-4E7A-9D44-A31B52737D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AA587A-1EA6-4E7A-9D44-A31B52737D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AA587A-1EA6-4E7A-9D44-A31B52737D6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
