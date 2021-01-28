@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 using ConsoleApp1.Function;
 namespace ConsoleApp1
 {
@@ -6,9 +8,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            ExcelFun.readExcel();
+            #region
+            // ExcelFun.readExcel();
+            // HashCodeFun.HashSHA256();
+            #endregion
+
+
+
             Console.ReadKey();
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }

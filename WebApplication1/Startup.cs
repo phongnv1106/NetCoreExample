@@ -52,6 +52,13 @@ namespace WebApplication1
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:Admin}/{controller=Dashboard}/{action=Index}/{id?}"
+                );
+            });
         }
     }
 }

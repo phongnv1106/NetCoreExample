@@ -50,6 +50,10 @@ namespace IdentityMVC.Example
                 options.FallbackPolicy = new AuthorizationPolicyBuilder()
                     .RequireAuthenticatedUser()
                     .Build();
+                options.AddPolicy("RequireAdminOnly", policy =>
+      policy.RequireRole("Manager", "Administrator"));
+                options.AddPolicy("ShouldBeOnlyEmployee", policy =>
+                      policy.RequireClaim("EmployeeId"));
             });
 
           

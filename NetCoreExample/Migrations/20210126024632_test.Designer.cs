@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetCoreExample.Models.EF;
 
 namespace NetCoreExample.Migrations
 {
     [DbContext(typeof(MywebDbContext))]
-    partial class MywebDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210126024632_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,15 +35,6 @@ namespace NetCoreExample.Migrations
 
                     b.Property<float>("UnitPrice")
                         .HasColumnType("real");
-
-                    b.Property<string>("_company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("_employeeCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("doubleTest")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
